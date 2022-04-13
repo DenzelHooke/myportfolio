@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  // transition: all 500ms ease-in-out;
 }
 
 :root {
@@ -16,6 +18,7 @@
   --intro-large: #ffffff11;
   --red-accent: #E25252;
   --menu-btn-bg: rgb(255, 255, 255);
+  --text-grey: rgb(65, 65, 65);
 }
 
 body {
@@ -65,7 +68,7 @@ svg {
 // }
 
 .container {
-  max-width: 1300px;
+  // max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -109,7 +112,7 @@ svg {
 
 .navbar-wrapper {
   justify-content: flex-end;
-
+  display: none;
   .menu-btn {
     position: fixed;
     display: block;
@@ -212,21 +215,20 @@ nav.closed  {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  p:nth-child(1) {
+  .largeText {
     font-size: 4rem;
     text-shadow: 2px 2px 6px rgba(19, 19, 19, 0.608);
+    span {
+     color: var(--red-accent);
+   }
   }
 
-  p:nth-child(1) span {
-    color: var(--red-accent);
-  }
 
   .inner {
+    display: flex;
     flex-shrink: 1;
     flex-grow: 1;
-    flex-basis: auto;
 
-    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -276,6 +278,7 @@ nav.closed  {
 }
 
 .projects {
+  overflow-x: hidden;
 
   .section-title {
     margin-bottom: 60px;
@@ -310,7 +313,7 @@ nav.closed  {
       margin-bottom: 10px;
       p {
         font-size: 1.2em;
-        color: rgb(65, 65, 65);
+        color: var(--text-grey);
       }
     }
     
@@ -324,8 +327,21 @@ nav.closed  {
     }
 
     .links {
+      ul {
+        padding-top: 15px;
+        display: flex;
+        li {
+          margin: 0 10px;
+        }
+
+        li:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+
       .live {
         border-radius: 3px;
+        margin-left: 0;
         padding: 5px 10px;
         font-weight: 500;
         border: 3px solid black;
@@ -336,17 +352,43 @@ nav.closed  {
         }
       }
 
-      ul {
-        padding-top: 15px;
-        display: flex;
-        li {
-          margin: 0 10px;
+    }
+  }
+}
+
+
+// Very small screens
+@media screen and (max-width: 350px) {
+  .section-title {
+    font-size: 2.5em;
+  }
+
+  .intro {
+    .largeText {
+      font-size: 2em;
+    }
+  }
+
+  .about {
+    .summary {
+      .skills {
+        svg {
+          width: 35px;
+        }
+
+        .item {
+          margin: 10px 0;
+        }
+      }
+
+      summary {
+        p {
+          font-size: .7em;
         }
       }
     }
   }
 }
-
 
 // Desktop
 @media screen and (min-width:700px) {
@@ -358,6 +400,10 @@ nav.closed  {
 }
 
 @media screen and (min-width:850px) {
+  .container {
+    max-width: 1000px;
+  }
+
   .navbar-wrapper { 
     position: sticky;
     top: 0;
@@ -395,9 +441,7 @@ nav.closed  {
   }
 
   .projects {
-    .container {
-      max-width: 1000px;
-    }
+
     .project {
       .basic-info {
         display: flex;

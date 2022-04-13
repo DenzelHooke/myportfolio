@@ -5,18 +5,25 @@ import './App.scss';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   useEffect(() => {
 
     //Runs on start
-    gsap.from('.about', { opacity: 0, duration: 2 , x: -100, scrollTrigger: {
-      trigger: '.about',
-      start: 'top 50%',
-    }})
+
+    //Pull top of window to start of page
+    gsap.to(window, { duration: 0, scrollTo: { y: 0 } })
+
+    //! stick in about componenet
+
 
     //Gets all project elements
     const projects = gsap.utils.toArray('.project');
@@ -51,6 +58,7 @@ function App() {
       <Intro />
       <About />
       <Projects />
+      <Contact />
     </>
   );
 }

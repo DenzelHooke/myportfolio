@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef, useEffect } from 'react'
 
 import { FaReact }  from 'react-icons/fa'
 import { SiJavascript } from 'react-icons/si'
@@ -10,12 +10,22 @@ import { BsGithub } from 'react-icons/bs'
 import { FaGitAlt } from 'react-icons/fa'
 import { SiMysql } from 'react-icons/si'
 import { SiDjango } from 'react-icons/si'
+import { gsap } from 'gsap';
+
 
 function About() {
   const iconSize = 60;
+  const elRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(elRef.current, { opacity: 0, duration: 2 , x: -100, scrollTrigger: {
+      trigger: elRef.current,
+      start: 'top 25%',
+    }})
+  }, [])
 
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" ref={elRef}>
       <div className="container">
         <div className="section-title"><span>About me</span></div>
         <div className="summary flex">

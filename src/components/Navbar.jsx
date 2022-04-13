@@ -16,6 +16,7 @@ function Navbar() {
   const onScroll = (e) => {
     setScrollFromTop(window.pageYOffset);
   }
+  
   const onClick = () => {
     setNavState(!navState)
   }
