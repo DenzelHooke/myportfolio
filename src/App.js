@@ -58,7 +58,7 @@ function App() {
       <Intro />
       <About />
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
