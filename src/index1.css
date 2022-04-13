@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg: #D3B986;
+  --text-accent: #ffffff;
+  --intro-large: #ffffff11;
+  --red-accent: #E25252;
+}
+
+body {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: var(--body-bg);
+  color: rgb(34, 34, 34);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Utilies */
+
+.project-card {
+  background: rgb(239, 239, 239);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wider-container {
+  padding: 10px 5%;
+}
+
+.largeText {
+  font-size: 4rem;
+}
+
+.text-accent {
+  color:  var(--text-accent);
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.bolden {
+  font-weight: 500;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.shadow {
+  box-shadow: -1px 3px 5px 1px rgba(18, 18, 18, 0.397);
+}
+
+
+
+/* End of utils */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.navbar {
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.navbar span {
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-size: 30px;
+}
+
+.navbar > * {
+  font-weight: 500;
+}
+
+
+
+.intro {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.intro .inner {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.intro p {
+  font-size: 5rem;
+  text-shadow: 2px 2px 6px rgba(19, 19, 19, 0.608);
+  text-align: center;
+}
+
+.intro .inner.container span {
+  color: var(--red-accent);
+  font-weight: bold;
+}
+
+.intro::before {
+  content: 'FRONTEND';
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  font-size: 10rem;
+  padding: 0 5px;
+  font-family: 'Monoton';
+  color: var(--intro-large);
+  z-index: -200;
+}
+
+.intro::after {
+  content: 'BACKEND';
+  display: block;
+  text-align: end;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  font-size: 10rem;
+  padding: 0 5px;
+  font-family: 'Monoton';
+  color: var(--intro-large);
+  z-index: -200;
+}
+
+
+
+.about img {
+  height: 320px;
+  width: 208px;
+}
+
+.about span {
+  position: relative;
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about span::after {
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 25%;
+  height: 10px;
+  width: 50%;
+  background: var(--red-accent);
+}
+
+.about .summary {
+  margin-top: 60px;
+  max-width: 800px;
+}
+
+.about summary {
+  font-size: 1.8rem;
+  margin-left: 60px;
+  flex: 2;
+}
+
+.skills {
+  padding-top: 30px;
+}
+
+.skills .item {
+  margin: 30px 0;
+}
+
+.skills p {
+  font-size: 1.5rem;
+}
+
+.skill-icons {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+
+
+.projects .wider-container > .section-title {
+  position: relative;
+}
+
+.projects .wider-container > .section-title::after {
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 15%;
+  height: 10px;
+  width: 70%;
+  background: var(--red-accent);
+}
+.project {
+  margin-top: 100px;
+  position: relative;
+  gap: -10px;
+}
+
+.project-odd {
+  grid-template-columns: 1fr .5fr 50px 1fr;
+  grid-template-rows: .5fr 1fr 100px;
+}
+
+.project-odd p {
+  grid-column: 1 / span 2;
+}
+
+.project-odd > div {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.project-odd > img {
+  height: 300px;
+  width: 500px;
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+  z-index: -200;
+  margin-bottom: 20px;
+}
+
+.project-odd .project-summary {
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  color: rgb(77, 77, 77);
+  font-weight:  500;
+}
+
+.project-summary p {
+  font-size: 25px;
+  text-align: center;
+}
+
+.project-odd .project-tech {
+  grid-row: 3 / -1;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.project-tech {
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.project-odd .project-tech p {
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+.project-tech p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-accent);
+  word-spacing: 10px;
+}
+
+.project-odd p:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.project-even {
+  grid-template-columns: 1fr 50px .5fr 1fr;
+  grid-template-rows: .5fr 1fr 100px;
+}
+
+.project-even p:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 5 / 4;
+}
+
+.project-even > div {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.project-even > img {
+  height: 300px;
+  width: 500px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+  z-index: -200;
+  margin-bottom: 20px;
+}
+
+.project-even .project-summary {
+  grid-row: 2;
+  grid-column: 5 / 2;
+  color: rgb(77, 77, 77);
+  font-weight:  500;
+}
+
+
+.project-even .project-tech {
+  grid-row: 3 / -1;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.project-even .project-tech p {
+  margin-right: 40px;
+}
