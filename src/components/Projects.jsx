@@ -19,7 +19,7 @@ function Projects() {
       title: "ChattrBox",
       summary: "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux-Toolkit.",
       technologies: "React JavaScript Node.js Express Redux-Toolkit Socket.io",
-      image: "chattr-zoomed.png",
+      image: "chattr.png",
       alt: "chat application screenshot",
       github: "https://github.com/DenzelHooke/ChattrrBox",
       live: "https://chattrrbox.herokuapp.com/",
@@ -70,12 +70,12 @@ function Projects() {
                 <div className="links">
                   <ul>
                     <li>
-                      <a href={project.live} className="live">
+                      <a href={project.live} className="live" target="_blank">
                         VIEW
                       </a>
                     </li>
                     <li>
-                      <a href={project.github} className="github">
+                      <a href={project.github} className="github" target="_blank">
                         {project.svg}
                       </a>
                     </li>
