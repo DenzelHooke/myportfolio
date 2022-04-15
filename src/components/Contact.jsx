@@ -10,7 +10,7 @@ function Contact() {
           <span>Contact</span>
         </div>
         <p>
-          I'm currently looking for new opportunities, so don't feel afraid to reach out, my inbox is always open.
+          I'm currently looking for new opportunitites. Please don't hesitate to reach out, my inbox is always open.
         </p>
         <a href="mailto:denzelhooke@hotmail.com" className="email">Email me</a>
         <ul className="social-links">
