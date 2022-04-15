@@ -112,7 +112,8 @@ svg {
 
 .navbar-wrapper {
   justify-content: flex-end;
-  display: none;
+  display: flex;
+  
   .menu-btn {
     position: fixed;
     display: block;
