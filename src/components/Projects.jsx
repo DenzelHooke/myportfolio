@@ -29,7 +29,7 @@ function Projects() {
       title: "Weather-mee",
       summary: "A weather application built with React and Express powered by the OpenWeatherAPI",
       technologies: "React JavaScript Node.js Express",
-      image: "weather.png",
+      image: "weather3.png",
       alt: "Weather-me screenshot",
       github: "https://github.com/DenzelHooke/Weather-mee",
       live: "https://weather-mee.netlify.app/",
