@@ -68,6 +68,7 @@ function Projects() {
                   <div className="img-wrapper"><img src={require(`../imgs/${project.image}`)} alt={`${project.alt}`} className="project-img shadow"/></div>
                 </div>
                 <div className="links">
+                  <div className="spacer"></div>
                   <ul>
                     <li>
                       <a href={project.live} className="live" target="_blank">

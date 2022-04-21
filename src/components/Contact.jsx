@@ -13,6 +13,7 @@ function Contact() {
           I'm currently looking for new opportunitites. Please don't hesitate to reach out, my inbox is always open.
         </p>
         <a href="mailto:denzelhooke@hotmail.com" className="email">Email me</a>
+        <div className="email_text"><span className="light-text">or</span> <p className="light-text">denzelhooke@hotmail.com</p></div>
         <ul className="social-links">
           <li>
             <a href="https://github.com/denzelhooke" target="_blank">

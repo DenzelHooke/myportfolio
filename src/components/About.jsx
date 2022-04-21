@@ -30,7 +30,7 @@ function About() {
         <div className="section-title"><span>About me</span></div>
         <div className="summary flex">
           <div className="img-wrapper">
-            <img src={require('../imgs/cutout-head.png')} alt="Denzel's headshot" />
+            <img src={require('../imgs/headshot2.png')} alt="Denzel's headshot" />
           </div>
           <summary>
             <p>Hello, I’m Denzel and I’m a self-taught developer in lower mainland British Columbia, Canada. All areas of programming interest me with full-stack web development having the most of my interest.</p>

@@ -19,6 +19,7 @@
   --red-accent: #E25252;
   --menu-btn-bg: rgb(255, 255, 255);
   --text-grey: rgb(65, 65, 65);
+  --menu-btn-lines: rgb(255, 255, 255);
 }
 
 body {
@@ -105,6 +106,27 @@ svg {
   font-size: 3rem;
   text-align: center;
   font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  display: inline-block;
+  position: relative;
+}
+
+.section-title span::after {
+  position: absolute;
+  display: block;
+  content: '';
+  left: 25%;
+
+  width: 50%;
+  height: 10px;
+  background-color: var(--red-accent);
+}
+
+.light-text {
+  color: var(--text-grey);
 }
 
 /* End of utils */
@@ -117,40 +139,41 @@ svg {
   .menu-btn {
     position: fixed;
     display: block;
-    background: black;
+    background: var(--red-accent);
     height: 40px;
     width: 50px;
     right: 10px;
     top: 20px;
     cursor: pointer;
     z-index: 999;
+    border-radius: 10px;
   }
 
   .menu-btn div {
     position: absolute;
-    right: 9px;
-    top: 18px;
+    right: 10px;
+    top: 19px;
     height: 2px;
     width: 30px;
-    background: var(--menu-btn-bg);
+    background: var(--menu-btn-lines);
   }
 
   .menu-btn div::before {
     content: '';
     position: absolute;
     top: 5px;
-    height: 2px;
-    width: 30px;
-    background: var(--menu-btn-bg);
+    height: inherit;
+    width: inherit;
+    background: inherit;
   }
   
   .menu-btn div::after {
     content: '';
     position: absolute;
     top: -5px;
-    height: 2px;
-    width: 30px;
-    background: var(--menu-btn-bg);
+    height: inherit;
+    width: inherit;
+    background: inherit;
   }
   
 
@@ -178,7 +201,7 @@ svg {
       cursor: pointer;
       position: absolute;
       top: 30px;
-      right: 10%;
+      right: 30px;
       transform: scale(2.6);
     }
 
@@ -243,8 +266,14 @@ nav.closed  {
   max-width: 700px;
   margin: 0 auto;
 
+  .img-wrapper {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
   img {
-    width: 125px;
+    width: 200px;
+    height: 200px;
   }
 
   .summary {
@@ -280,7 +309,7 @@ nav.closed  {
 
 .projects {
   overflow-x: hidden;
-
+  
   .section-title {
     margin-bottom: 60px;
   }
@@ -379,6 +408,12 @@ nav.closed  {
     text-transform: uppercase;
     border: 3px solid rgb(31, 31, 31);
     border-radius: 3px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .email:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
   }
 
   .social-links {
@@ -437,6 +472,11 @@ nav.closed  {
     .container {
       max-width: 750px;
     }
+    .project {
+      .wrapper {
+        flex-direction: row-reverse;
+      }
+    }
   }
 }
 
@@ -445,17 +485,50 @@ nav.closed  {
     .container {
       max-width: 1000px;
     }
+    
+    .project:nth-child(odd) {
+      .wrapper {
+        flex-direction: row-reverse;
+      }
+
+      .basic-info {
+        background-color: jgjhkhhiijjhkkukljkl
+      }
+
+      
+      .links {
+        display: flex;
+        gap: 10px;
+
+        .spacer {
+          flex-basis: 513px;
+        }
+
+        ul {
+          flex-basis: 40%;
+        }
+      }
+    }
 
     .project {
       .wrapper {
+        flex-direction: row;
         gap: 10px;
-    
+        display: flex;
+
+        
         .basic-info {
           flex: 40%;
+          display: flex;
+          flex-direction: column;
         }
     
         .img-wrapper {
-          flex: 60%;
+          max-width: 513px;
+        }
+
+        .project-tech {
+          margin-top: auto;
         }
       }
     }
@@ -493,29 +566,6 @@ nav.closed  {
             }
           }
         }
-      }
-    }
-  }
-
-  .projects {
-
-    .project {
-      .basic-info {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      .project-tech {
-        margin-top: auto;
-      }
-
-      .img-wrapper {
-        max-width: 513px;
-      }
-
-      .wrapper {
-        display: flex;
-        flex-direction: row;
       }
     }
   }
