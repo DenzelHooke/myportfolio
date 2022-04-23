@@ -559,7 +559,7 @@ nav.closed  {
         gap: 10px;
 
         .spacer {
-          flex-basis: 513px;
+          min-width: 513px;
         }
 
         ul {
