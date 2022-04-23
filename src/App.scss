@@ -147,6 +147,10 @@ svg {
 
 .bolden {
   font-weight: 500;
+
+  span {
+    font-size: 20px;
+  }
 }
 
 .section-title {
@@ -344,6 +348,7 @@ nav.closed  {
 
     .skill-icons {
       padding-left: 25px;
+      flex-wrap: wrap;
 
       > svg {
         margin: 0 5px;
@@ -515,6 +520,12 @@ nav.closed  {
 
 // Desktop
 @media screen and (min-width:700px) {
+  .bolden {
+    span {
+      font-size: 22px;
+    }
+  }
+
   .projects {
     .container {
       max-width: 750px;
