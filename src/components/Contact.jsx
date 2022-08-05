@@ -1,6 +1,6 @@
-import React from 'react'
-import { BsGithub } from 'react-icons/bs'
-import { BsLinkedin } from 'react-icons/bs'
+import React from "react";
+import { BsGithub } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 function Contact() {
   return (
@@ -10,10 +10,16 @@ function Contact() {
           <span>Contact</span>
         </div>
         <p>
-          I'm currently looking for new opportunitites. Please don't hesitate to reach out, my inbox is always open.
+          I'm currently looking for new opportunitites. Please don't hesitate to
+          reach out, my inbox is always open.
         </p>
-        <a href="mailto:denzelhooke@hotmail.com" className="email">Email me</a>
-        <div className="email_text"><span className="light-text">or</span> <p className="light-text">denzelhooke@hotmail.com</p></div>
+        <a href="mailto:denzelhooke-work@hotmail.com" className="email">
+          Email me
+        </a>
+        <div className="email_text">
+          <span className="light-text"></span>
+          <p className="light-text">denzelhooke-work@outlook.com</p>
+        </div>
         <ul className="social-links">
           <li>
             <a href="https://github.com/denzelhooke" target="_blank">
@@ -28,7 +34,7 @@ function Contact() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
