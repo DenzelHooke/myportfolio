@@ -28,7 +28,7 @@ function Projects() {
     {
       title: "Weather-mee",
       summary:
-        "A weather application built with React and Express powered by the OpenWeatherAPI",
+        "A weather application built with React and Express powered by the OpenWeatherAPI.",
       technologies: "React  JavaScript  Node.js  Express",
       image: "weather3.png",
       alt: "Weather-me screenshot",
@@ -40,7 +40,7 @@ function Projects() {
       title: "Password Manager",
       summary:
         "A simple and intuitive password manager built on Python and SQLite.",
-      technologies: "Python  SQLite",
+      technologies: "Python  SQLite.",
       image: "passManager.png",
       alt: "Password Manager screenshot",
       github: "https://github.com/DenzelHooke/Password-Manager",
