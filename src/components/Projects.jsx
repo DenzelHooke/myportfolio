@@ -48,9 +48,9 @@ function Projects() {
       svg: <BsGithub size={50} />,
     },
     {
-      title: "Portfolio",
+      title: "denzelhooke.com",
       summary:
-        "A sleeck and clean portfolio website showcasing my various projects.",
+        "A sleek and clean portfolio website showcasing my various projects.",
       technologies: "React  JavaScript",
       image: "portfolio.png",
       alt: "Portfolio website screenshot",
