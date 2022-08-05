@@ -17,7 +17,8 @@ function Projects() {
       title: "ChattrBox",
       summary:
         "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux-Toolkit.",
-      technologies: "React JavaScript Node.js Express Redux-Toolkit Socket.io",
+      technologies:
+        "React  JavaScript  Node.js  Express  Redux-Toolkit  Socket.io",
       image: "chattr.png",
       alt: "chat application screenshot",
       github: "https://github.com/DenzelHooke/ChattrrBox",
@@ -28,7 +29,7 @@ function Projects() {
       title: "Weather-mee",
       summary:
         "A weather application built with React and Express powered by the OpenWeatherAPI",
-      technologies: "React JavaScript Node.js Express",
+      technologies: "React  JavaScript  Node.js  Express",
       image: "weather3.png",
       alt: "Weather-me screenshot",
       github: "https://github.com/DenzelHooke/Weather-mee",
@@ -39,11 +40,22 @@ function Projects() {
       title: "Password Manager",
       summary:
         "A simple and intuitive password manager built on Python and SQLite.",
-      technologies: "Python SQLite",
+      technologies: "Python  SQLite",
       image: "passManager.png",
       alt: "Password Manager screenshot",
       github: "https://github.com/DenzelHooke/Password-Manager",
       live: null,
+      svg: <BsGithub size={50} />,
+    },
+    {
+      title: "Portfolio",
+      summary:
+        "A sleeck and clean portfolio website showcasing my various projects.",
+      technologies: "React  JavaScript",
+      image: "portfolio.png",
+      alt: "Portfolio website screenshot",
+      github: "https://github.com/DenzelHooke/myportfolio",
+      live: "http://denzelhooke.com",
       svg: <BsGithub size={50} />,
     },
   ];
