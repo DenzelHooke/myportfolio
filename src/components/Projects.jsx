@@ -1,15 +1,6 @@
 import React from "react";
 
-import { FaReact } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiPython } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
 import { BsGithub } from "react-icons/bs";
-import { FaGitAlt } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
-import { SiDjango } from "react-icons/si";
 
 function Projects() {
   const projects = [
