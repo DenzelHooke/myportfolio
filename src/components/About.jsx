@@ -13,6 +13,7 @@ import { SiDjango } from "react-icons/si";
 import { SiDocker } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { DiRedis } from "react-icons/di";
+import { DiMongodb } from "react-icons/di";
 
 import { gsap } from "gsap";
 
@@ -85,7 +86,13 @@ function About() {
                     {<SiJavascript size={iconSize} id="JavaScript" />}
                   </div>
                   <div className="tooltip">
+                    {<DiMongodb size={iconSize} id="MongoDB" />}
+                  </div>
+                  <div className="tooltip">
                     {<DiNodejs size={iconSize} id="Node.js" />}
+                  </div>
+                  <div className="tooltip">
+                    {<SiDjango size={iconSize} id="Django" />}
                   </div>
                   <div className="tooltip">
                     {<SiPython size={iconSize} id="Python" />}

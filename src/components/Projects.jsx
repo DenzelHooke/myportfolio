@@ -5,9 +5,21 @@ import { BsGithub } from "react-icons/bs";
 function Projects() {
   const projects = [
     {
+      title: "VideoChattr",
+      summary:
+        "A lightweight and intuitive video calling platform built on NextJS, Express, and Socket.io. Features an extensive backend API for data management.",
+      technologies:
+        "React  JavaScript  Node.js  Express  Redux-Toolkit  Socket.io MongoDB",
+      image: "video-chattr.png",
+      alt: "video chat application screenshot",
+      github: "https://github.com/DenzelHooke/videoChattrr",
+      live: "https://video-chattr-denzelhooke.vercel.app/",
+      svg: <BsGithub size={50} />,
+    },
+    {
       title: "ChattrBox",
       summary:
-        "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux-Toolkit.",
+        "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux. (Temporairily down for maintenance)",
       technologies:
         "React  JavaScript  Node.js  Express  Redux-Toolkit  Socket.io",
       image: "chattr.png",
