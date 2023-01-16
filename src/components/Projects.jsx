@@ -19,7 +19,7 @@ function Projects() {
     {
       title: "ChattrBox",
       summary:
-        "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux. (Temporairily down for maintenance)",
+        "A full-stack web application where users can chat amongst themselves in chat rooms built on React, Express and Redux.",
       technologies:
         "React  JavaScript  Node.js  Express  Redux-Toolkit  Socket.io",
       image: "chattr.png",
