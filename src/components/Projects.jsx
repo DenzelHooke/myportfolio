@@ -7,7 +7,7 @@ function Projects() {
     {
       title: "Coast Lumber",
       summary:
-        "An exciting and forward thinking mock lumber plant that cares about the enviroment whilst also giving back to the community. Built on Next.js, Framer motion and React.js.",
+        "An exciting and forward thinking mock lumber plant that cares about the environment whilst also giving back to the community. Built on Next.js, Framer motion and React.js.",
       technologies: "React  JavaScript  Next.js",
       image: "coast-lumber.jpg",
       alt: "coast lumber webpage screenshot",
