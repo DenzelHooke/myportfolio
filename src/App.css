@@ -471,7 +471,6 @@ nav.closed {
     margin-top: auto;
   }
   .navbar-wrapper {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;

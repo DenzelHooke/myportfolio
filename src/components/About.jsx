@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
+import { SiNextdotjs } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { DiNodejs } from "react-icons/di";
 import { BsGithub } from "react-icons/bs";
@@ -77,6 +78,9 @@ function About() {
                   <div className="tooltip">
                     {<SiCss3 size={iconSize} id="CSS3" />}
                   </div>
+                  <div className="tooltip">
+                    {<SiNextdotjs size={iconSize} id="Next.js" />}
+                  </div>
                 </div>
               </div>
               <div className="item bolden">
@@ -93,6 +97,9 @@ function About() {
                   </div>
                   <div className="tooltip">
                     {<SiDjango size={iconSize} id="Django" />}
+                  </div>
+                  <div className="tooltip">
+                    {<SiNextdotjs size={iconSize} id="Next.js" />}
                   </div>
                   <div className="tooltip">
                     {<SiPython size={iconSize} id="Python" />}

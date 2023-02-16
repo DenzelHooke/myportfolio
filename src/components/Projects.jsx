@@ -5,6 +5,17 @@ import { BsGithub } from "react-icons/bs";
 function Projects() {
   const projects = [
     {
+      title: "Coast Lumber",
+      summary:
+        "An exciting and forward thinking mock lumber plant that cares about the enviroment whilst also giving back to the community. Built on Next.js, Framer motion and React.js.",
+      technologies: "React  JavaScript  Next.js",
+      image: "coast-lumber.jpg",
+      alt: "coast lumber webpage screenshot",
+      github: "https://github.com/DenzelHooke/coast-lumber",
+      live: "https://coast-lumber.vercel.app/",
+      svg: <BsGithub size={50} />,
+    },
+    {
       title: "VideoChattr",
       summary:
         "A lightweight and intuitive video calling platform built on NextJS, Express, and Socket.io. Features an extensive backend API for data management.",
