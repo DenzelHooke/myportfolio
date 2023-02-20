@@ -99,9 +99,6 @@ function About() {
                     {<SiDjango size={iconSize} id="Django" />}
                   </div>
                   <div className="tooltip">
-                    {<SiNextdotjs size={iconSize} id="Next.js" />}
-                  </div>
-                  <div className="tooltip">
                     {<SiPython size={iconSize} id="Python" />}
                   </div>
                 </div>
