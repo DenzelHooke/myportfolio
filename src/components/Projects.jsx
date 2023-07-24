@@ -5,6 +5,17 @@ import { BsGithub } from "react-icons/bs";
 function Projects() {
   const projects = [
     {
+      title: "Plastico",
+      summary:
+        "Plastico revolutionizes hydration with the world's first 100% recyclable water bottle, combating plastic waste for a greener future. Embrace responsible consumption and make a positive impact with Plastico.",
+      technologies: "Next.js JavaScript GSAP",
+      image: "plastico.png",
+      alt: "plastico webpage screenshot",
+      github: "https://github.com/DenzelHooke/plastico",
+      live: "https://plastico-denzelhooke.vercel.app/ ",
+      svg: <BsGithub size={50} />,
+    },
+    {
       title: "Coast Lumber",
       summary:
         "An exciting and forward thinking mock lumber plant that cares about the environment whilst also giving back to the community. Built on Next.js, Framer motion and React.js.",
