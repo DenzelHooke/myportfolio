@@ -1,22 +1,20 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
-import { FaReact } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiNextdotjs } from "react-icons/si";
-import { SiPython } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
-import { BsGithub } from "react-icons/bs";
-import { FaGitAlt } from "react-icons/fa";
-import { SiMysql } from "react-icons/si";
-import { SiDjango } from "react-icons/si";
-import { SiDocker } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
-import { DiRedis } from "react-icons/di";
-import { DiMongodb } from "react-icons/di";
-
-import { gsap } from "gsap";
+import { BsGithub } from 'react-icons/bs';
+import { FaGitAlt, FaReact, FaSass, FaAws } from 'react-icons/fa';
+import {
+  SiMysql,
+  SiNestjs,
+  SiDjango,
+  SiPython,
+  SiDocker,
+  SiNextdotjs,
+  SiCss3,
+  SiHtml5,
+  SiJavascript,
+} from 'react-icons/si';
+import { DiRedis, DiMongodb, DiNodejs } from 'react-icons/di';
+import { gsap } from 'gsap';
 
 function About() {
   const iconSize = 60;
@@ -29,15 +27,15 @@ function About() {
       x: -100,
       scrollTrigger: {
         trigger: elRef.current,
-        start: "top 25%",
+        start: 'top 25%',
       },
     });
 
-    const tooltips = document.querySelectorAll(".tooltip");
+    const tooltips = document.querySelectorAll('.tooltip');
 
     tooltips.forEach((item, index) => {
-      const tooltip_text = document.createElement("span");
-      tooltip_text.classList.add("tooltip-text");
+      const tooltip_text = document.createElement('span');
+      tooltip_text.classList.add('tooltip-text');
       // console.log(item.children[0].id)
       tooltip_text.appendChild(document.createTextNode(item.children[0].id));
 
@@ -57,10 +55,18 @@ function About() {
           </div> */}
           <summary>
             <p>
-              Hello, I’m Denzel and I’m a self-taught developer in lower
-              mainland British Columbia, Canada. All areas of programming
-              interest me with full-stack web development having the most of my
-              interest.
+              Hello, I'm Denzel, an experienced developer based in{' '}
+              <i>Vancouver, Canada</i>, specializing in
+              <span className="bold"> Full-Stack</span> and{' '}
+              <span className="bold">Backend development</span>. My expertise
+              lies in crafting user-friendly web applications with elegant
+              front-end interfaces and robust back-end{' '}
+              <span className="bold"> infrastructures</span>. I'm dedicated to
+              staying current with the latest technologies, ensuring secure,
+              scalable, and maintainable solutions for your projects. Whether
+              you need a <span className="bold">complex</span> web application
+              or a <span className="bold">scalable</span> backend system, I'm
+              here to bring your development goals to life.
             </p>
             <div className="skills">
               <div className="item bolden">
@@ -87,6 +93,9 @@ function About() {
                 <span>Backend</span>
                 <div className="flex skill-icons">
                   <div className="tooltip">
+                    {<FaAws size={iconSize} id="AWS" />}
+                  </div>
+                  <div className="tooltip">
                     {<SiJavascript size={iconSize} id="JavaScript" />}
                   </div>
                   <div className="tooltip">
@@ -100,6 +109,9 @@ function About() {
                   </div>
                   <div className="tooltip">
                     {<SiPython size={iconSize} id="Python" />}
+                  </div>
+                  <div className="tooltip">
+                    {<SiNestjs size={iconSize} id="Nest.js" />}
                   </div>
                 </div>
               </div>

@@ -7,12 +7,12 @@
 }
 
 :root {
-  --body-bg: #D3B986;
-  --body-bg: #ffffff;
+  --body-bg: #d3b986;
+  --body-bg: #f8f8f8;
   --light-text: rgb(91, 91, 91);
   --text-accent: #ffffff;
   --intro-large: #ffffff11;
-  --red-accent: #E25252;
+  --red-accent: #e25252;
   --menu-btn-bg: rgb(255, 255, 255);
   --text-grey: rgb(65, 65, 65);
   --menu-btn-lines: rgb(255, 255, 255);
@@ -157,6 +157,10 @@ svg:hover {
   color: var(--text-grey);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* End of utils */
 .navbar-wrapper {
   justify-content: flex-end;
@@ -270,7 +274,7 @@ nav.closed {
 }
 
 .about {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 100px;
 }
