@@ -34,7 +34,6 @@ function App() {
 
       // For every second element, switch up the animation direction.
       if ((index + 1) % 2 === 0) {
-        console.log("odd");
         gsap.from(project, {
           opacity: 0,
           duration: dur,
@@ -45,7 +44,6 @@ function App() {
           },
         });
       } else {
-        console.log("even");
         gsap.from(project, {
           opacity: 0,
           duration: dur,
